@@ -1,0 +1,29 @@
+This is a work in progress.
+
+Takes a text file listing daily log entries, and imports them into [Day One](http://dayoneapp.com/).
+
+Usage
+-----
+    ruby parse.rb <path to file>
+
+Log File Format
+---------------
+Each day should begin with the date in `yyyy.mm.dd` format. I include the day of the week after that, but the script will ignore anything after the date. The lines following it are presumed to be the details of the day's goings-on. I start mine with two spaces and leave a blank line between days, but again, the script will ignore this. As far as the script is concerned, a new day begins every time it finds a line beginning with the `yyyy.mm.dd` format.
+
+    2012.05.17  Thu
+      Met with Steve after work
+      Caught up on email
+
+    2012.05.18  Fri
+      Had dinner with the Smiths
+      Took a cab home and watched Iron Man 2
+
+    2012.05.19  Sat
+      Helped Steve and Jenny move to their new place
+      Took a nap
+      Quiet evening
+
+    2012.05.20  Sun
+      Went to the farmer's market in the morning
+      Had a late lunch at Founding Farmers
+      Went for a walk

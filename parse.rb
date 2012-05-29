@@ -1,4 +1,14 @@
-path = '/Users/bboland/Dropbox/Notes/Daily.txt'
+# Get the file (first argument to the script)
+path = ARGV[0]
+if (!path || path.empty?)
+  puts "Usage: ruby parse.rb <path to file>"
+  exit
+# Make sure the file exists
+elsif (!File.exists?(path))
+  puts "File does not exist."
+  exit
+end
+  
 
 # Initialize variables
 date = ''
@@ -27,6 +37,6 @@ end
 
 # Print out the results
 date_logs.each do |date, lines|
-  puts "   " + date
-  puts lines
+  #puts "   " + date
+  #puts lines
 end
