@@ -1,6 +1,4 @@
-This is a work in progress.
-
-Takes a text file listing daily log entries, and imports them into [Day One](http://dayoneapp.com/).
+Takes a text file listing daily log entries, and imports them into [Day One](http://dayoneapp.com/). With the latest version of Day One, the command line tools are available separately. Download and install it from their [Tools page](http://dayoneapp.com/tools/).
 
 Usage
 -----
